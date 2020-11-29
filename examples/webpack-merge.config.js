@@ -1,5 +1,5 @@
 const merge = require("webpack-merge");
-const SpeedMeasurePlugin = require("speed-measure-webpack-plugin");
+const SpeedMeasurePlugin = require("../index");
 
 const smp = new SpeedMeasurePlugin();
 const TARGET = process.env.npm_lifecycle_event;
@@ -9,10 +9,10 @@ const commonConfig = {
     app: ["./index.js"],
   },
   module: {
-    loaders: [
+    rules: [
       {
         test: /\.css$/,
-        loaders: ["style", "css"],
+        use: ["style", "css"],
       },
     ],
   },
