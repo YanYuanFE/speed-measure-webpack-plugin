@@ -6,7 +6,7 @@ const TARGET = process.env.npm_lifecycle_event;
 
 const commonConfig = {
   entry: {
-    app: ["./app.js"]
+    app: ["./index.js"],
   },
   module: {
     loaders: [
@@ -20,16 +20,16 @@ const commonConfig = {
 
 let mergedConfig = commonConfig;
 
-if(TARGET === "start") {
+if (TARGET === "start") {
   mergedConfig = merge(common, {
     module: {
       loaders: [
         {
           test: /\.jsx?$/,
-          loader: "babel?stage=1"
-        }
-      ]
-    }
+          loader: "babel?stage=1",
+        },
+      ],
+    },
   });
 }
 
