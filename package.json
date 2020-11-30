@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "description": "Measure + analyse the speed of your webpack loaders and plugins",
   "main": "index.js",
+  "types": "typings.d.ts",
   "scripts": {
     "test": "jest",
     "functional-test": "lerna bootstrap && lerna run full-test",
