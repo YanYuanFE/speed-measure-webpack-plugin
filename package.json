@@ -1,6 +1,6 @@
 {
   "name": "speed-show-webpack-plugin",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Measure + analyse the speed of your webpack loaders and plugins",
   "main": "index.js",
   "types": "typings.d.ts",
@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/stephencookdev/speed-measure-webpack-plugin.git"
+    "url": "git+https://github.com/YanYuanFE/speed-show-webpack-plugin.git"
   },
   "author": {
     "name": "YanYuan",
